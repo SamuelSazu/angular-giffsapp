@@ -1,0 +1,26 @@
+<!-- <ul>
+    <li *ngFor="let busqueda of resultados">
+        {{busqueda.title}}
+    </li>
+</ul> -->
+
+
+<div class="row">
+
+    <div *ngFor="let busqueda of resultados"
+    class="col-md-4 col-sm-6">
+
+        <div class="card">
+            <img    [src]="busqueda.images.downsized_medium.url" 
+                    [alt]="busqueda.title"
+                    class="card-img-top">
+            <div class="card-body">
+                <p class='card-text'>
+                    {{busqueda.title}}
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
